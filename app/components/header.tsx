@@ -48,29 +48,45 @@ export function DropDownMenu({ isOpen, menuChanged }: DropDownMenuProps) {
             className="self-end w-8 h-8 shadow-sm text-neutral-400"
           ></ChevronDownIcon>
           <div className="flex flex-col items-center h-full justify-evenly">
-            <MenuItem title="SOBRE" duration="1000ms" />
-            <MenuItem title="PROJETOS" duration="1100ms" />
-            <MenuItem title="CONTATO" duration="1200ms" />
+            <Transition.Child
+              enter={`transform transition duration-[1000ms]`}
+              enterFrom="-translate-y-[-350px]"
+              enterTo="translate-y-0"
+              leave="transform duration-200 transition ease-in-out"
+              leaveFrom="translate-y-0"
+              leaveTo="-translate-y-[-350px]"
+            >
+              <h5 className="text-lg font-bold tracking-widest underline shadow-sm text-neutral-50 decoration-solid decoration-emerald-500 decoration-2 underline-offset-8">
+                SOBRE
+              </h5>
+            </Transition.Child>
+            <Transition.Child
+              enter={`transform transition duration-[1100ms]`}
+              enterFrom="-translate-y-[-350px]"
+              enterTo="translate-y-0"
+              leave="transform duration-200 transition ease-in-out"
+              leaveFrom="translate-y-0"
+              leaveTo="-translate-y-[-350px]"
+            >
+              <h5 className="text-lg font-bold tracking-widest underline shadow-sm text-neutral-50 decoration-solid decoration-emerald-500 decoration-2 underline-offset-8">
+                PROJETOS
+              </h5>
+            </Transition.Child>
+            <Transition.Child
+              enter={`transform transition duration-[1200ms]`}
+              enterFrom="-translate-y-[-350px]"
+              enterTo="translate-y-0"
+              leave="transform duration-200 transition ease-in-out"
+              leaveFrom="translate-y-0"
+              leaveTo="-translate-y-[-350px]"
+            >
+              <h5 className="text-lg font-bold tracking-widest underline shadow-sm text-neutral-50 decoration-solid decoration-emerald-500 decoration-2 underline-offset-8">
+                CONTATO
+              </h5>
+            </Transition.Child>
           </div>
         </div>
       </div>
     </Transition>
-  );
-}
-
-function MenuItem({ title, duration }: MenuItemProps) {
-  return (
-    <Transition.Child
-      enter={`transform transition duration-[${duration}]`}
-      enterFrom="-translate-y-[-350px]"
-      enterTo="translate-y-0"
-      leave="transform duration-200 transition ease-in-out"
-      leaveFrom="translate-y-0"
-      leaveTo="-translate-y-[-350px]"
-    >
-      <h5 className="text-lg font-bold tracking-widest underline shadow-sm text-neutral-50 decoration-solid decoration-emerald-500 decoration-2 underline-offset-8">
-        {title}
-      </h5>
-    </Transition.Child>
   );
 }
