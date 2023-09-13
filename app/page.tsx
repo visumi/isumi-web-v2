@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Header, { DropDownMenu } from "./components/header";
-import HomeContent from "./components/home";
+import HomeContent from "./components/homeContent";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
