@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header, { DropDownMenu } from "./components/header";
 import HomeContent from "./components/homeContent";
+import Timeline from "./components/timeline";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +19,9 @@ export default function Home() {
         }
       >
         <Header menuChanged={() => setIsOpen(!isOpen)} />
-        <div className="mt-16">
+        <div className="flex flex-col gap-24 mt-16">
           <HomeContent />
+          <Timeline />
         </div>
       </div>
     </main>
