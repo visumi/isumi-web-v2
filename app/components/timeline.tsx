@@ -1,22 +1,44 @@
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
-import TimelineCard from "./timelineCard";
+import TimelineCard, { TimelineCardModel } from "./timelineCard";
 
 export default function Timeline() {
   return (
-    <div>
-      <div className="h-[1px] bg-emerald-500"></div>
-      <div className="relative p-4 overflow-hidden text-center bg-neutral-900">
-        <h2 className="relative z-10 text-lg font-bold tracking-widest text-neutral-200">
+    <div className="px-3">
+      <div className="flex gap-1">
+        <h2 className="pb-2 text-xl font-bold tracking-wider underline decoration-emerald-500 underline-offset-4">
           CARREIRA
         </h2>
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <CodeBracketIcon className="absolute w-44 h-44 text-neutral-800" />
-        </div>
+        <CodeBracketIcon className="w-7 h-7 text-emerald-500" />
       </div>
-      <TimelineCard title="Picpay" bgColor="bg-[#00cc73]" />
-      <TimelineCard title="Banco Original" bgColor="bg-[#08AB5C]" />
-      <TimelineCard title="Enforce" bgColor="bg-[#081E87]" />
-      <TimelineCard title="LaRCom - Unicamp" bgColor="bg-neutral-50" />
+      <div className="flex flex-col gap-2 pb-4">
+        {cards.map((card) => (
+          <TimelineCard key={card.title} data={card} />
+        ))}
+      </div>
     </div>
   );
 }
+
+const cards: TimelineCardModel[] = [
+  {
+    title: "PicPay",
+    period: "2023 - Atual",
+    description:
+      "Desenvolvimento e manuteção da plataforma interna dos gerentes de pessoas física. Participei do processo de fusão do Banco Original com o PicPay.",
+  },
+  {
+    title: "Banco Original",
+    period: "DEZ - 2021",
+    description: "Atuação na Plataforma Comercial do Banco com manutenções e novas entregas.",
+  },
+  {
+    title: "Enforce - BTG Pactual",
+    period: "SET - 2020",
+    description: "Criando soluções de alto valor para os sistemas internos da empresa.",
+  },
+  {
+    title: "LaRCom - Unicamp",
+    period: "MAR - 2020",
+    description: "Estágio com foco no desenvolvimento de scripts para um ERP.",
+  },
+];
