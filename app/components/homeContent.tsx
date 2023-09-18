@@ -1,3 +1,5 @@
+"use client";
+
 import { Transition } from "@headlessui/react";
 import Tag from "./tag";
 
@@ -28,7 +30,7 @@ export default function HomeContent() {
         </div>
         <div className="flex flex-wrap justify-center gap-2">
           <Transition.Child
-            enter={`transform transition duration-[500ms] ease-in-out`}
+            enter={`transform transition duration-500 ease-in-out`}
             enterFrom="opacity-0 scale-0"
             enterTo="opacity-100 scale-100"
             leave="transform duration-200 transition ease-in-out"
@@ -48,7 +50,7 @@ export default function HomeContent() {
             <Tag title="React" color="bg-[#61DBFB]" icon="react.svg" />
           </Transition.Child>
           <Transition.Child
-            enter={`transform transition duration-[700ms] ease-in-out`}
+            enter={`transform transition duration-700 ease-in-out`}
             enterFrom="opacity-0 scale-0"
             enterTo="opacity-100 scale-100"
             leave="transform duration-200 transition ease-in-out"
@@ -78,7 +80,7 @@ export default function HomeContent() {
             <Tag title="CSS" color="bg-[#0277BD]" icon="css.svg" />
           </Transition.Child>
           <Transition.Child
-            enter={`transform transition duration-[1000ms] ease-in-out`}
+            enter={`transform transition duration-1000 ease-in-out`}
             enterFrom="opacity-0 scale-0"
             enterTo="opacity-100 scale-100"
             leave="transform duration-200 transition ease-in-out"
