@@ -31,7 +31,7 @@ export default function ScrollButton() {
 
   return (
     <button
-      className="fixed p-2 rounded-full shadow-lg bottom-4 right-4 bg-emerald-500"
+      className="fixed p-2 rounded-full shadow-lg bottom-4 right-4 bg-gradient-to-tr from-emerald-500 to-emerald-700"
       onClick={() => window.scrollTo(0, 0)}
     >
       <ArrowSmallUpIcon className="w-6 h-6 text-emerald-50" />

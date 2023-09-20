@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="bg-[url('/waves.svg')] bg-no-repeat bg-cover relative">
       <Header />
-      <div className="flex flex-col gap-16 mt-8">
+      <div className="flex flex-col gap-14 mt-8">
         <HomeContent />
         <About />
         <Timeline />

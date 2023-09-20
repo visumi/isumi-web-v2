@@ -10,7 +10,7 @@ export default function Timeline() {
       <Transition
         appear={true}
         show
-        enter="transform transition duration-100"
+        enter="transform transition duration-300"
         enterFrom="opacity-0 scale-50"
         enterTo="opacity-100 scale-100"
         leave="transform duration-200 transition ease-in-out"
