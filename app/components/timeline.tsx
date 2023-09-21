@@ -24,7 +24,7 @@ export default function Timeline() {
           <CodeBracketIcon className="w-7 h-7 text-emerald-500" />
         </div>
       </Transition>
-      <div className="flex flex-col gap-2 pb-4">
+      <div className="flex flex-col gap-2">
         {cards.map((card, i) => (
           <Transition
             key={card.title}
