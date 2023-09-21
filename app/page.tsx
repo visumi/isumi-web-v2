@@ -1,5 +1,4 @@
 import About from "./components/about";
-import Contact from "./components/contact";
 import Header from "./components/header";
 import HomeContent from "./components/homeContent";
 import ScrollButton from "./components/scrollButton";
@@ -13,7 +12,6 @@ export default function Home() {
         <HomeContent />
         <About />
         <Timeline />
-        <Contact />
       </div>
       <ScrollButton />
     </main>
