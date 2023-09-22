@@ -30,8 +30,8 @@ export default function About() {
           <UserCircleIcon className="w-7 h-7 md:w-8 md:h-8 text-emerald-500" />
         </div>
         <div className="flex w-full rounded shadow-md bg-neutral-800 shadow-emerald-500/50">
-          <div className="bg-[url('/me.jpg')] bg-cover bg-no-repeat grayscale w-40 md:w-72 md:h-56 rounded-tl rounded-bl"></div>
-          <div className="flex flex-wrap w-full gap-2 p-2">
+          <div className="bg-[url('/me.jpg')] bg-cover bg-no-repeat grayscale w-40 md:w-56 md:h-56 rounded-tl rounded-bl"></div>
+          <div className="flex flex-wrap w-full gap-2 md:gap-4 p-2">
             <Tag
               title="Campinas-SP"
               icon={MapPinIcon}
@@ -44,7 +44,7 @@ export default function About() {
               iconColor="text-purple-500"
               className="max-[320px]:flex-1 flex-0 md:flex-1"
             />
-            <div className="flex flex-col w-full gap-2">
+            <div className="flex flex-col w-full gap-2 md:gap-4">
               <Tag
                 title="Eng. Front-end PL @ PicPay"
                 icon={BriefcaseIcon}
