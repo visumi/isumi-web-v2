@@ -16,7 +16,7 @@ export default function Header() {
       leaveFrom="opacity-100 scale-100 "
       leaveTo="opacity-0 scale-95 "
     >
-      <div className="flex items-center justify-between m-3">
+      <div className="flex items-center justify-between m-3 md:mx-8">
         <span className="font-bold text-3xl text-neutral-50 left-0.5">泉</span>
         <div className="flex gap-1">
           <button className="m-2">

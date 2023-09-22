@@ -8,12 +8,12 @@ import {
 
 export default function Projects() {
   return (
-    <div className="px-3">
+    <div className="px-3 md:px-8">
       <div className="flex gap-1">
-        <h2 className="pb-2 text-xl font-bold tracking-wider underline decoration-emerald-500 underline-offset-4">
+        <h2 className="pb-2 text-xl md:text-2xl font-bold tracking-wider underline decoration-emerald-500 underline-offset-4">
           PROJETOS
         </h2>
-        <PuzzlePieceIcon className="w-7 h-7 text-emerald-500" />
+        <PuzzlePieceIcon className="w-7 h-7 md:w-8 md:h-8 text-emerald-500" />
       </div>
       <div className="flex gap-4 overflow-x-auto">
         <FinanceCard />

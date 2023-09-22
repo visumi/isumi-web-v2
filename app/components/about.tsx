@@ -22,15 +22,15 @@ export default function About() {
       leaveFrom="opacity-100 scale-100 "
       leaveTo="opacity-0 scale-95 "
     >
-      <div className="px-3">
+      <div className="px-3 md:px-8">
         <div className="flex gap-1">
-          <h2 className="pb-2 text-xl font-bold tracking-wider underline decoration-emerald-500 underline-offset-4">
+          <h2 className="pb-2 text-xl font-bold tracking-wider underline md:text-2xl decoration-emerald-500 underline-offset-4">
             SOBRE MIM
           </h2>
-          <UserCircleIcon className="w-7 h-7 text-emerald-500" />
+          <UserCircleIcon className="w-7 h-7 md:w-8 md:h-8 text-emerald-500" />
         </div>
         <div className="flex w-full rounded shadow-md bg-neutral-800 shadow-emerald-500/50">
-          <div className="bg-[url('/me.jpg')] bg-cover bg-no-repeat grayscale w-40 rounded-tl rounded-bl"></div>
+          <div className="bg-[url('/me.jpg')] bg-cover bg-no-repeat grayscale w-40 md:w-72 md:h-56 rounded-tl rounded-bl"></div>
           <div className="flex flex-wrap w-full gap-2 p-2">
             <Tag
               title="Campinas-SP"
@@ -42,7 +42,7 @@ export default function About() {
               title="24 anos"
               icon={CakeIcon}
               iconColor="text-purple-500"
-              className="max-[320px]:flex-1 flex-0"
+              className="max-[320px]:flex-1 flex-0 md:flex-1"
             />
             <div className="flex flex-col w-full gap-2">
               <Tag
@@ -77,10 +77,10 @@ function Tag({ title, icon, iconColor, className }: TagProps) {
 
   return (
     <div className={`flex ${className}`}>
-      <div className="flex items-center p-1 rounded-l bg-neutral-700">
-        <Icon className={`w-4 h-4 ${iconColor}`} />
+      <div className="flex items-center p-1 md:p-4 rounded-l bg-neutral-700">
+        <Icon className={`w-4 h-4 md:w-6 md:h-6 ${iconColor}`} />
       </div>
-      <span className="flex text-center items-center justify-center w-full p-1 text-sm rounded-r bg-neutral-600 text-neutral-200">
+      <span className="flex items-center justify-center w-full p-1 text-sm text-center rounded-r md:text-lg bg-neutral-600 text-neutral-200">
         {title}
       </span>
     </div>
