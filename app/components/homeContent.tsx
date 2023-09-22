@@ -1,7 +1,7 @@
 "use client";
 
 import { Transition } from "@headlessui/react";
-import Tag from "./tag";
+import SkillTag from "./skillTag";
 
 export default function HomeContent() {
   return (
@@ -37,7 +37,7 @@ export default function HomeContent() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-0"
           >
-            <Tag title="Angular" color="bg-[#B52E31]" icon="angular.svg" />
+            <SkillTag title="Angular" color="bg-[#B52E31]" icon="angular.svg" />
           </Transition.Child>
           <Transition.Child
             enter={`transform transition duration-[600ms] ease-in-out`}
@@ -47,7 +47,7 @@ export default function HomeContent() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-0"
           >
-            <Tag title="React" color="bg-[#61DBFB]" icon="react.svg" />
+            <SkillTag title="React" color="bg-[#61DBFB]" icon="react.svg" />
           </Transition.Child>
           <Transition.Child
             enter={`transform transition duration-700 ease-in-out`}
@@ -57,7 +57,7 @@ export default function HomeContent() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-0"
           >
-            <Tag title="NextJS" color="bg-neutral-500" icon="nextjs.svg" />
+            <SkillTag title="NextJS" color="bg-neutral-500" icon="nextjs.svg" />
           </Transition.Child>
           <Transition.Child
             enter={`transform transition duration-[800ms] ease-in-out`}
@@ -67,7 +67,7 @@ export default function HomeContent() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-0"
           >
-            <Tag title="HTML" color="bg-[#E34C26]" icon="html.svg" />
+            <SkillTag title="HTML" color="bg-[#E34C26]" icon="html.svg" />
           </Transition.Child>
           <Transition.Child
             enter={`transform transition duration-[900ms] ease-in-out`}
@@ -77,7 +77,7 @@ export default function HomeContent() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-0"
           >
-            <Tag title="CSS" color="bg-[#0277BD]" icon="css.svg" />
+            <SkillTag title="CSS" color="bg-[#0277BD]" icon="css.svg" />
           </Transition.Child>
           <Transition.Child
             enter={`transform transition duration-1000 ease-in-out`}
@@ -87,7 +87,7 @@ export default function HomeContent() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-0"
           >
-            <Tag
+            <SkillTag
               title="TailwindCSS"
               color="bg-[#32B1C1]"
               icon="tailwindcss.svg"
@@ -101,7 +101,7 @@ export default function HomeContent() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-0"
           >
-            <Tag title="RxJS" color="bg-[#E32286]" icon="rxjs.svg" />
+            <SkillTag title="RxJS" color="bg-[#E32286]" icon="rxjs.svg" />
           </Transition.Child>
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function Header() {
     >
       <div className="flex items-center justify-between m-3">
         <span className="font-bold text-3xl text-neutral-50 left-0.5">泉</span>
-        <div className="flex gap-3">
+        <div className="flex gap-1">
           <button className="m-2">
             <DocumentArrowDownIcon className="w-5 h-5 text-neutral-50" />
           </button>
