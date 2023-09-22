@@ -39,7 +39,7 @@ function FinanceCard() {
       </p>
       <div className="flex items-center justify-between pt-4">
         <div className="flex gap-1">
-          <Pill title="React" />
+          <Pill title="Next.js" />
           <Pill title="TailwindCSS" />
           <Pill title="Node.js" />
         </div>
