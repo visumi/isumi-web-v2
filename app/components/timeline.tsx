@@ -5,7 +5,7 @@ import { CodeBracketIcon } from "@heroicons/react/24/solid";
 
 export default function Timeline() {
   return (
-    <div className="px-3 md:px-8">
+    <div className="px-3 md:px-32">
       <Transition
         appear={true}
         show

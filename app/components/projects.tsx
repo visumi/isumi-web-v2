@@ -7,7 +7,7 @@ import {
 
 export default function Projects() {
   return (
-    <div className="px-3 md:px-8">
+    <div className="px-3 md:px-32">
       <div className="flex gap-1">
         <h2 className="pb-2 text-xl font-bold tracking-wider underline md:text-2xl decoration-emerald-500 underline-offset-4">
           PROJETOS
@@ -41,7 +41,7 @@ function FinanceCard() {
           <Pill title="TailwindCSS" />
           <Pill title="Node.js" />
         </div>
-        <button className="rounded bg-emerald-500">
+        <button className="rounded bg-emerald-500 hover:brightness-90">
           <GlobeAltIcon className="p-1 h-7 w-7 text-emerald-50" />
         </button>
       </div>
