@@ -1,3 +1,6 @@
+"use client";
+
+import { Transition } from "@headlessui/react";
 import {
   BanknotesIcon,
   CircleStackIcon,
@@ -7,17 +10,28 @@ import {
 
 export default function Projects() {
   return (
-    <div className="px-3 md:px-32">
-      <div className="flex gap-1">
-        <h2 className="pb-2 text-xl font-bold tracking-wider underline md:text-2xl decoration-emerald-500 underline-offset-4">
-          PROJETOS
-        </h2>
-        <PuzzlePieceIcon className="w-7 h-7 md:w-8 md:h-8 text-emerald-500" />
+    <Transition
+      appear={true}
+      show
+      enter="transform transition duration-200"
+      enterFrom="opacity-0 scale-50"
+      enterTo="opacity-100 scale-100"
+      leave="transform duration-200 transition ease-in-out"
+      leaveFrom="opacity-100 scale-100 "
+      leaveTo="opacity-0 scale-95 "
+    >
+      <div className="px-3 md:px-32">
+        <div className="flex gap-1">
+          <h2 className="pb-2 text-xl font-bold tracking-wider underline md:text-2xl decoration-emerald-500 underline-offset-4">
+            PROJETOS
+          </h2>
+          <PuzzlePieceIcon className="w-7 h-7 md:w-8 md:h-8 text-emerald-500" />
+        </div>
+        <div>
+          <FinanceCard />
+        </div>
       </div>
-      <div>
-        <FinanceCard />
-      </div>
-    </div>
+    </Transition>
   );
 }
 
@@ -42,7 +56,11 @@ function FinanceCard() {
           <Pill title="Node.js" />
         </div>
         <button className="rounded bg-emerald-500 hover:brightness-90">
-          <a href="https://finance.isumi.com.br/" target="_blank" aria-label="Finance">
+          <a
+            href="https://finance.isumi.com.br/"
+            target="_blank"
+            aria-label="Finance"
+          >
             <GlobeAltIcon className="p-1 h-7 w-7 text-emerald-50" />
           </a>
         </button>
