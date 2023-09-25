@@ -26,7 +26,7 @@ export default function HomeContent() {
           <h4 className="mx-2 text-md md:text-lg drop-shadow-sm text-neutral-300">
             Entusiasta em criar aplicações que mudam visões
           </h4>
-          <div className="absolute h-48 w-full bg-[url('/textBg.svg')] bg-cover md:bg-repeat-x md:bg-contain"></div>
+          <div className="absolute h-48 w-full bg-[url('/textbg.svg')] bg-cover md:bg-repeat-x md:bg-contain"></div>
         </div>
         <div className="flex flex-wrap justify-center gap-2">
           <Transition.Child
