@@ -2,7 +2,7 @@ import {
   BanknotesIcon,
   CircleStackIcon,
   GlobeAltIcon,
-  PuzzlePieceIcon
+  PuzzlePieceIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Projects() {
@@ -42,7 +42,9 @@ function FinanceCard() {
           <Pill title="Node.js" />
         </div>
         <button className="rounded bg-emerald-500 hover:brightness-90">
-          <GlobeAltIcon className="p-1 h-7 w-7 text-emerald-50" />
+          <a href="https://finance.isumi.com.br/" target="_blank" aria-label="Finance">
+            <GlobeAltIcon className="p-1 h-7 w-7 text-emerald-50" />
+          </a>
         </button>
       </div>
     </div>
