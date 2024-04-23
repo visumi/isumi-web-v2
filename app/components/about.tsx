@@ -46,7 +46,7 @@ export default function About() {
             />
             <div className="flex flex-col w-full gap-2 md:gap-4">
               <Tag
-                title="Eng. Front-end PL @ PicPay"
+                title="Eng. Front-end SR @ PicPay"
                 icon={BriefcaseIcon}
                 iconColor="text-green-500"
                 className="flex-1"
