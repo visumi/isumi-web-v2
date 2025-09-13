@@ -39,7 +39,7 @@ export default function About() {
               className="flex-1"
             />
             <Tag
-              title="25 anos"
+              title="26 anos"
               icon={CakeIcon}
               iconColor="text-purple-500"
               className="max-[320px]:flex-1 flex-0 md:flex-1"

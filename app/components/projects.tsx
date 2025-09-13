@@ -4,8 +4,9 @@ import { Transition } from "@headlessui/react";
 import {
   BanknotesIcon,
   CircleStackIcon,
-  GlobeAltIcon,
   PuzzlePieceIcon,
+  ScissorsIcon,
+  TableCellsIcon
 } from "@heroicons/react/24/outline";
 
 export default function Projects() {
@@ -27,8 +28,9 @@ export default function Projects() {
           </h2>
           <PuzzlePieceIcon className="w-7 h-7 md:w-8 md:h-8 text-emerald-500" />
         </div>
-        <div>
+        <div className="flex gap-2 flex-col lg:flex-row">
           <FinanceCard />
+          <BarberoCard />
         </div>
       </div>
     </Transition>
@@ -37,7 +39,39 @@ export default function Projects() {
 
 function FinanceCard() {
   return (
-    <div className="flex flex-col flex-shrink-0 gap-2 p-2 rounded bg-neutral-800 md:w-96">
+    <div className="flex flex-col flex-shrink-0 gap-2 p-2 rounded bg-neutral-800 lg:w-96">
+      <div className="relative flex justify-center p-2 overflow-hidden bg-zinc-200 rounded-sm">
+        <span className="text-2xl font-extrabold tracking-wide text-zinc-900">
+          barbero
+        </span>
+        <ScissorsIcon className="absolute top-0 w-12 h-12 text-zinc-300 -left-3" />
+        <TableCellsIcon className="absolute w-12 h-12 text-zinc-300 -right-3 -bottom-3" />
+      </div>
+      <p className="text-xs tracking-wide text-neutral-200">
+        Uma plataforma para gestão de clientes, serviços e prestadores para o ramo de barbearias.
+      </p>
+      <div className="flex items-center justify-between mt-auto">
+        <div className="flex gap-1">
+          <Pill title="Next.js" />
+          <Pill title="TailwindCSS" />
+        </div>
+        {/* <button className="rounded bg-emerald-500 hover:brightness-90">
+          <a
+            href="https://finance.isumi.com.br/"
+            target="_blank"
+            aria-label="Finance"
+          >
+            <GlobeAltIcon className="p-1 h-7 w-7 text-emerald-50" />
+          </a>
+        </button> */}
+      </div>
+    </div>
+  );
+}
+
+function BarberoCard() {
+  return (
+    <div className="flex flex-col flex-shrink-0 gap-2 p-2 rounded bg-neutral-800 lg:w-96">
       <div className="relative flex justify-center p-2 overflow-hidden bg-purple-200 rounded-sm">
         <span className="text-2xl font-extrabold tracking-wide text-purple-900">
           finance.
@@ -55,7 +89,7 @@ function FinanceCard() {
           <Pill title="TailwindCSS" />
           <Pill title="Node.js" />
         </div>
-        <button className="rounded bg-emerald-500 hover:brightness-90">
+        {/* <button className="rounded bg-emerald-500 hover:brightness-90">
           <a
             href="https://finance.isumi.com.br/"
             target="_blank"
@@ -63,7 +97,7 @@ function FinanceCard() {
           >
             <GlobeAltIcon className="p-1 h-7 w-7 text-emerald-50" />
           </a>
-        </button>
+        </button> */}
       </div>
     </div>
   );
